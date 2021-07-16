@@ -194,7 +194,7 @@ int findValidNum(zeroIndex selectedIndex, int selectedNum,
     // i need a way to
     // 1. go back to the previous index and call findValidNum again
     // 2. update grid correctly with the valid number found, or backtrack again if necessary
-    // test
+    // 
 
 
 }
