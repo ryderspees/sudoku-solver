@@ -35,6 +35,9 @@ int main()
     zeroIndex selectedIndex;
     vector< pair<int, int> > indexHolder;
 
+
+
+    /* ------MODIFY THIS GRID WITH ANY SUDOKU BOARD------ */
     int grid[9][9] = { {3, 0, 6, 5, 0, 8, 4, 0, 0},
      {5, 2, 0, 0, 0, 0, 0, 0, 0},
      {0, 8, 7, 0, 0, 0, 0, 3, 1},
@@ -44,6 +47,8 @@ int main()
      {1, 3, 0, 0, 0, 0, 2, 5, 0},
      {0, 0, 0, 0, 0, 0, 0, 7, 4},
      {0, 0, 5, 2, 0, 6, 3, 0, 0} };
+
+
 
     // print the original array
     printGrid(grid);
@@ -219,15 +224,21 @@ int findValidNum(zeroIndex selectedIndex, int selectedNum, int grid[9][9])
 void printGrid(int grid[9][9]) {
     cout << "INITIAL GRID" << endl;
     for (int i = 0; i < 9; i++) {
-        cout << "{";
         for (int j = 0; j < 9; j++) {
-            if (j == 8) {
-                cout << grid[i][j];
-                continue;
+            cout << grid[i][j];
+            if (j == 2 || j == 5) {
+                cout << " | ";
             }
-            cout << grid[i][j] << ", ";
+            else {
+                cout << " ";
+            }
         }
-        cout << "}" << endl;
+        if (i == 2 || i == 5) {
+            cout << "\n----------------------" << endl;;
+        }
+        else {
+            cout << endl;
+        }
     }
     cout << endl;
 }
@@ -240,15 +251,21 @@ void printGrid(zeroIndex selectedIndex, int backtrackCount, int currentIndexInHo
 
 
     for (int i = 0; i < 9; i++) {
-        cout << "{";
         for (int j = 0; j < 9; j++) {
-            if (j == 8) {
-                cout << grid[i][j];
-                continue;
+            cout << grid[i][j];
+            if (j == 2 || j == 5) {
+                cout << " | ";
             }
-            cout << grid[i][j] << ", ";
+            else {
+                cout << " ";
+            }
         }
-        cout << "}" << endl;
+        if (i == 2 || i == 5) {
+            cout << "\n----------------------" << endl;;
+        }
+        else {
+            cout << endl;
+        }
     }
     cout << endl;
 }
