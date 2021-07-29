@@ -1,10 +1,10 @@
 //
 //--SUDOKU SOLVER BY BACKTRACKING--
 
-//algorithm:
+//general algorithm:
 //1. find the next zero and "select" that number
 //2. increment the "selected" number
-//3. check if the placement of the number is valid by checking the row and column
+//3. check if the placement of the number is valid by checking the row, column, and box
 //4. if valid, go back to step 1
 //5. if not valid, go back to step 2 until 9 is reached
 //6. if 9 is not valid, set the current value to zero, return to the previous number placed on the grid,
@@ -21,8 +21,6 @@ void printGrid(int grid[9][9]);
 void printGrid(zeroIndex selectedIndex, int backtrackCount, int currentIndexInHolder, int grid[9][9]);
 zeroIndex findNextZero(int grid[9][9]);
 int findValidNum(zeroIndex selectedIndex, int selectedNum, int grid[9][9]);
-//int backtrack(zeroIndex selectedIndex, int selectedNum,
-//    vector< pair<int, int> > indexHolder, int currentIndexInHolder, int grid[9][9]);
 
 int stepCounter = 0;
 
@@ -96,7 +94,7 @@ int main()
             selectedNum = grid[selectedIndex.row][selectedIndex.col];
             selectedNum = findValidNum(selectedIndex, selectedNum, grid);
 
-            // place the number into the grid
+            // place the new valid number into the grid, or zero if 1-9 is not valid for this index either
             grid[selectedIndex.row][selectedIndex.col] = selectedNum;
 
             cout << "BACKTRACKING... [" << selectedIndex.row << ", " << selectedIndex.col << "]" << endl;
@@ -110,24 +108,6 @@ int main()
     }
     return 0;
 }
-
-
-//int backtrack(zeroIndex selectedIndex, int selectedNum,
-//    vector< pair<int, int> > indexHolder, int currentIndexInHolder, int grid[9][9]) 
-//{
-//    currentIndexInHolder--;
-//    selectedIndex.row = indexHolder[currentIndexInHolder].first;
-//    selectedIndex.col = indexHolder[currentIndexInHolder].second;
-//    selectedNum = grid[selectedIndex.row][selectedIndex.col];
-//    selectedNum = findValidNum(selectedIndex, selectedNum, grid);
-//
-//    if (selectedNum != -1) {
-//        return selectedNum;
-//    }
-//    return backtrack(selectedIndex, selectedNum, indexHolder, currentIndexInHolder, grid);
-//    
-//
-//}
 
 zeroIndex findNextZero(int grid[9][9]) {
     // find the next zero index
