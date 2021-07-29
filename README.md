@@ -1,4 +1,5 @@
 # SudokuSolver
+#### Edit the grid on line 28 to any valid sudoku board and this program will solve it via backtracking
 
 ## General Backtracking Algorithm:
 1. Find the next zero and "select" that number
