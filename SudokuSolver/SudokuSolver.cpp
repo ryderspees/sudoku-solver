@@ -1,15 +1,3 @@
-//
-//--SUDOKU SOLVER BY BACKTRACKING--
-
-//general algorithm:
-//1. find the next zero and "select" that number
-//2. increment the "selected" number
-//3. check if the placement of the number is valid by checking the row, column, and box
-//4. if valid, go back to step 1
-//5. if not valid, go back to step 2 until 9 is reached
-//6. if 9 is not valid, set the current value to zero, return to the previous number placed on the grid,
-//increment it, and return to step 3
-
 #include <iostream>
 #include <vector>
 
