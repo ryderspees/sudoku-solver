@@ -1,6 +1,7 @@
 # SudokuSolver
 #### Edit the grid on line 28 to any valid sudoku board and this program will solve it via backtracking
-###More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
+### More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
+
 ## General Backtracking Algorithm:
 1. Find the next zero and "select" that number
 2. Increment the "selected" number
