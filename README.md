@@ -6,8 +6,6 @@ More information about the backtracking algorithm can be found [here](https://en
 This project uses only the C++ Standard Library.
 
 ### Compilation
-
-        mkdir build && cd build
         g++ -std=c++11 SudokuSolver.cpp -o sudoku
         ./sudoku < filename
 Where 'filename' is the name of the txt file with the incomplete sudoku board. An example is provided in example.txt
