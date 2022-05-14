@@ -9,8 +9,8 @@ This project uses only the C++ Standard Library.
 
         mkdir build && cd build
         g++ -std=c++11 SudokuSolver.cpp -o sudoku
-        ./sudoku filename
-Where 'filename' is the name of the txt file with the incomplete sudoku board. An example is provided in board.txt
+        ./sudoku < filename
+Where 'filename' is the name of the txt file with the incomplete sudoku board. An example is provided in example.txt
 
 ## General Backtracking Algorithm:
 1. Find the next zero and "select" that number
