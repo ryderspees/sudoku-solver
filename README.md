@@ -1,6 +1,16 @@
 # SudokuSolver
-#### Edit the grid on line 28 to any valid sudoku board and this program will solve it via backtracking
-#### More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
+More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
+        
+### Required packages
+
+This project uses only the C++ Standard Library.
+
+### Compilation
+
+        mkdir build && cd build
+        g++ -std=c++11 SudokuSolver.cpp -o sudoku
+        ./sudoku filename
+Where 'filename' is the name of the txt file with the incomplete sudoku board. An example is provided in board.txt
 
 ## General Backtracking Algorithm:
 1. Find the next zero and "select" that number
