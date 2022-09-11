@@ -1,4 +1,4 @@
-# SudokuSolver
+# Sudoku Solver
 More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
         
 ### Required packages
