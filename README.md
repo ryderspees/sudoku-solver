@@ -1,5 +1,5 @@
 # Sudoku Solver
-To any lurkers: This project was created in 2021 just after graduating from high school. I am aware it is terribly written, but I like to keep it as an example of how far I've come as a programmer, plus I put time into the documentation.
+To any lurkers: This project was created in 2021 just after graduating from high school. I am aware it is terribly written, but I like to keep it as an example of how far I've come as a programmer, plus I wrote a very pretty README
 
 More information about the backtracking algorithm can be found [here](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
         
